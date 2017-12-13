@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>wovns - circle</title>
+    <link rel="stylesheet" href="css/app.css" />
+    
+    <script type="text/javascript" src="js/paper-full.js"></script>
+    <script type="text/paperscript" canvas="canvas" src="js/circle.js"></script>
+
+    
+    <script src="js/Blob.js" type="text/javascript"></script>
+    <script src="js/FileSaver.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <canvas id="canvas" resize></canvas>
+    <a href="javascript:" id="save">DOWNLOAD AS SVG</a>
+    <script type="text/javascript">
+    	var filename = 'circle';
+    	document.getElementById('save').addEventListener("click", save);
+    	
+    	function save() {
+    		var serializer = new XMLSerializer();
+    		var svg = paper.project.exportSVG();
+    		var svg_string = serializer.serializeToString(svg);
+    		var blob = new Blob(
+    	        [svg_string],
+    	        {type: "image/svg+xml;charset="+svg.characterSet}
+    	    );
+    		saveAs(blob, filename);
+    	};
+    </script>
+</body>
+</html>

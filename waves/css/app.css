@@ -1,0 +1,65 @@
+html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+ 
+canvas{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+img{
+    display: none;
+}
+  
+#save{
+    background: #FFF;
+    color: #000;
+    font-family: sans-serif;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: .7vw;
+    margin: .5vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    border: 3px solid #000;
+    font-weight: bold;
+    transition: all .25s;
+}
+
+#instructions{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+}
+
+#instructions p{
+    padding: .7vw;
+    margin: .5vw;
+    color: #000;
+    font-family: sans-serif;
+}
+
+#save:hover{
+    background: #000;
+    color: #FFF 
+}
