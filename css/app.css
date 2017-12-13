@@ -1,4 +1,45 @@
 body{
-	font-family: sans-serif;
-	padding: 8vw;
+	padding: 4vh 8vw;
+	font-family: 'Oxygen', sans-serif;
+}
+
+a{
+	color: #000;
+	transition: all .24s;
+	text-decoration: none;
+	display: block;
+	padding: 2vh 0;
+}
+
+a:hover{
+	color: #D6AA5E;
+
+
+}
+
+ul{
+	padding: 0;
+}
+
+ul li{
+	list-style: none;
+	border-bottom: 1px solid #E1E3DC;
+}
+
+h2{
+	width: 130px;
+	height: 23px;
+	text-indent: -9876em;
+	background: url(../img/logo@2x.png) no-repeat;
+	background-size:120px;
+	margin-bottom: 4vh;
+}
+
+h1{
+	width: 438px;
+	height: 125px;
+	text-indent: -9876em;
+	background: url(../img/title@2x.png) no-repeat;
+	background-size:438px;
+	margin-bottom: 4vh;
 }
